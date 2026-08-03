@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem("ozturk-portfolio-theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script>
+<script src="writings-data.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İbrahim Öztürk — Home</title>
+<meta name="description" content="Portfolio and CV of İbrahim Öztürk, Game Designer &amp; Director. Seven years across indie, international, and AAA-scale productions.">
+<meta property="og:title" content="İbrahim Öztürk — Game Designer &amp; Director">
+<meta property="og:description" content="Portfolio, CV, and writing — game design, development, and direction.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">İ.<span>ÖZTÜRK</span></a>
+    <div class="nav-right">
+      <ul>
+        <li><a class="navlink active" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="navlink" href="work.html">Work</a></li>
+        <li><a class="navlink" href="projects.html">Projects</a></li>
+        <li><a class="navlink" href="writing.html">Writing</a></li>
+        <li><a class="navlink" href="about.html">About</a></li>
+        <li><a class="navlink" href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Dark</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="container">
+      <h1>İbrahim<br>Öztürk</h1>
+      <span class="subtitle">Technical Designer</span>
+      <p class="bio">Gameplay first. Everything else follows.
+
+I design, prototype, and implement gameplay systems that balance creativity with technical execution, from the first playable to the final build.</p>
+      <div class="cta-row">
+        <a href="work.html" class="btn primary">View the work</a>
+        <a href="projects.html" class="btn">Explore projects</a>
+        <a href="writing.html" class="btn">Read the writing</a>
+      </div>
+      <div class="stamp">Open to work</div>
+    </div>
+  </section>
+
+  <div class="section-break" aria-hidden="true"><span class="rule"></span><span class="marks"><i></i><i></i><i></i></span><span class="rule"></span></div>
+
+  <section class="writing-preview section-alt">
+    <div class="container">
+      <h2 style="font-size:clamp(28px,4.5vw,40px); margin-bottom:10px;">Latest Writing</h2>
+      <div id="writing-preview"></div>
+      <div style="margin-top:32px;">
+        <a href="writing.html" class="btn">View all writing</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-break" aria-hidden="true"><span class="rule"></span><span class="marks"><i></i><i></i><i></i></span><span class="rule"></span></div>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Let's build<br>something.</h2>
+      <a class="contact-email" href="mailto:ibrahimozturk.dev@hotmail.com">ibrahimozturk.dev@hotmail.com</a>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/ozturkibrahim/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <!--  <a href="https://medium.com/@ibrahimozturk.dev" target="_blank" rel="noopener">Medium ↗</a> -->
+        <span class="taglike">Istanbul, Turkey</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 İbrahim Öztürk — Technical Designer</span>
+    <div class="footer-links">
+      <a href="mailto:ibrahimozturk.dev@hotmail.com">ibrahimozturk.dev@hotmail.com</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://linkedin.com/in/ozturkibrahim/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <span aria-hidden="true">·</span>
+     <!-- <a href="https://medium.com/@ibrahimozturk.dev" target="_blank" rel="noopener">Medium ↗</a> -->
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script>renderWritingPreview('writing-preview', 3);</script>
+</body>
+</html>
